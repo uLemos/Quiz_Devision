@@ -1,0 +1,58 @@
+
+.home{
+  /* Home */
+  position: relative;
+  width: 1800px;
+  height: 900px;
+  
+  background: #FFFFFF;
+  }
+  
+  .title{
+    /* Hello </user> */
+    
+    position: absolute;
+    width: 884px;
+    height: 122px;
+    left: 510px;
+    top: 220px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 128px;
+    line-height: 122px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0.3px 1px white;
+    }
+  
+  .subTitle{
+    /* Pressione para começa... */
+  
+  position: absolute;
+  width: 293px;
+  height: 23px;
+  left: 750px;
+  top: 700px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  transition: 0.2s;
+  }
+  
+  .subTitle:hover{
+    cursor: pointer;
+    top: 690px;
+  }
+  
+  

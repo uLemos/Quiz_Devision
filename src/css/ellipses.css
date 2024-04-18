@@ -9,7 +9,8 @@
   top: 200px;
   background: #FF4F4F;
   filter: blur(150px);
-  }
+  z-index: 0;  
+}
   
   .Ellipse3{
     /* Ellipse 3 */
@@ -19,9 +20,10 @@
   height: 923px;
   left: 500px;
   top: -50px;
-  background: #FFEA30;
+  background: #ffcf30;
   filter: blur(150px);
-  }
+  z-index: 0;
+}
   
   .Ellipse2{
   /* Ellipse 2 */
@@ -32,7 +34,8 @@
   top: -117px;
   background: #FFA53A;
   filter: blur(150px);
-  }
+  z-index: 0;
+}
   
   .Ellipse5{
     /* Ellipse 5 */
@@ -42,9 +45,10 @@
   height: 700px;
   left: 500px;
   top: 400px;
-  background: #71AAFF;
+  background: #f371ff;
   filter: blur(150px);
-  }
+  z-index: 0; 
+}
   
   .Ellipse4{
     /* Ellipse 4 */
@@ -56,6 +60,7 @@
   top: -200px;
   background: #9A76FF;
   filter: blur(150px);
+  z-index: 0;
   }
   
   
@@ -67,8 +72,9 @@
   height: 992px;
   left: 1152px;
   top: -186px;
-  background: #86E9FF;
+  background: #8a86ff;
   filter: blur(150px);
+  z-index: 0;
   }
   
   

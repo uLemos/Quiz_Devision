@@ -12,8 +12,8 @@ const CardAccess = () => {
         </div>
         <div className="container-subForm">
           <div className="checkBox">
-            <input type="checkbox" />
-            <p>Lembre-se de mim</p>
+            <input type="checkbox" id="remenber" />
+            <label for="remenber">Lembre-se de mim</label>
           </div>
           <p>Esqueci minha senha</p>
         </div>

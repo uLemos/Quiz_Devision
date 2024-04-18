@@ -1,59 +1,32 @@
 
 .home{
   /* Home */
-  position: relative;
-  width: 1800px;
-  height: 900px;
-  
-  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: antiquewhite;
   }
   
   .title{
     /* Hello </user> */
-    
     position: absolute;
-    width: 884px;
-    height: 122px;
-    left: 510px;
-    top: 220px;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 128px;
     line-height: 122px;
-    display: flex;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0.3px 1px white;
+    z-index: 1;
+    transition: 1s;
     }
-  
-  .subTitle{
-    /* Pressione para começa... */
-  
-  position: absolute;
-  width: 293px;
-  height: 23px;
-  left: 710px;
-  padding: 20px;
-  top: 700px;
-  font-family: sans-serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 23px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-decoration-line: underline;
-  color: #FFFFFF;
-  transition: 0.1s;
-  }
-  
-  .subTitle:hover{
-    cursor: pointer;
-    top: 690px;
-  }
-  
   

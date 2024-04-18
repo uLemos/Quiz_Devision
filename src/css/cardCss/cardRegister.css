@@ -13,7 +13,6 @@
       border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
     }
     
-    
     h1{
       display: flex;
       margin-top: 45px;
@@ -54,6 +53,11 @@
       align-items: center;
       width: 100%;
     }
+
+    
+    .checkBoxRegister {
+      height: 25px;
+    }
     
     .container-subForm div input{
       border-radius: 12px;
@@ -83,9 +87,13 @@
       border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
     }
 
-    .checkBox2 input{
-        width: 20px;
+    .buttonRegister{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 10px;
     }
+
     
     
     

@@ -1,5 +1,5 @@
 import React from "react";
-import '../../css/cardRegister.css'
+import '../../css/cardCss/cardRegister.css'
 
 const CardRegister = () => {
     return (
@@ -12,14 +12,17 @@ const CardRegister = () => {
                         <input type="password" placeholder="Senha" />
                     </div>
                     <div className="container-subFormRegistger">
-                        <div className="checkBox">
+                        <div className="checkBoxRegister">
                             <input type="checkbox" />
                             <p>Termos de uso</p>
                         </div>
-                        <div className="checkBox2">
+                        <div className="checkBoxRegister">
                             <input type="checkbox" />
                             <p>Políticas de Privacidade</p>
                         </div>
+                    </div>
+                    <div className="buttonRegister">
+                        <button onSubmit="">Registrar</button>
                     </div>
                 </form>
             </div>   

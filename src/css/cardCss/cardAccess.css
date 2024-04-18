@@ -31,9 +31,15 @@ h1{
 
 p{
   font-weight: bold;
-  color: #FFFFFF;
+  color: hsl(0, 0%, 100%);
   font-family: sans-serif;
   letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.container-subForm p:hover{
+ cursor: pointer;
+ color: hsla(234, 47%, 31%, 0.562);
 }
 
 .container-form{
@@ -63,7 +69,7 @@ p{
   user-select: none;
   justify-content: space-around;
   align-items: center;
-  padding: 0px 20px 0px 0px;
+  padding: 0px 50px 0px 0px;
   color: #FFFFFF;
   font-weight: bold;
   letter-spacing: 0.1px;
@@ -103,5 +109,27 @@ p{
   border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
 }
 
+.buttonLogin{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
 
+button{
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 7px;
+  width: 160px;
+  border: #FFFFFF;
+  border-radius: 5px;
+  background: linear-gradient(106.12deg, rgba(0, 112, 175, 0.6) -4.46%, rgba(34, 113, 232, 0.3) 102.72%);
+  transition: 1s;
+}
 
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(106.12deg, rgba(0, 111, 175, 0.767) -4.46%, rgba(34, 113, 232, 0.342) 102.72%);
+}

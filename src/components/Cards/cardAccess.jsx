@@ -1,5 +1,5 @@
 import React from "react";
-import '../../css/cardAccess.css';
+import '../../css/cardCss/cardAccess.css';
 
 const CardAccess = () => {
   return (
@@ -15,7 +15,10 @@ const CardAccess = () => {
             <input type="checkbox" id="remenber" />
             <label for="remenber">Lembre-se de mim</label>
           </div>
-          <p>Esqueci minha senha</p>
+          <p>Esqueci a senha</p>
+        </div>
+        <div className="buttonLogin">
+          <button onSubmit="">Login</button>
         </div>
       </form>
     </div>    

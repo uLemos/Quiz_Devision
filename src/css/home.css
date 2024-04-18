@@ -34,7 +34,8 @@
   position: absolute;
   width: 293px;
   height: 23px;
-  left: 750px;
+  left: 710px;
+  padding: 20px;
   top: 700px;
   font-family: sans-serif;
   font-style: italic;
@@ -47,7 +48,7 @@
   text-align: center;
   text-decoration-line: underline;
   color: #FFFFFF;
-  transition: 0.2s;
+  transition: 0.1s;
   }
   
   .subTitle:hover{

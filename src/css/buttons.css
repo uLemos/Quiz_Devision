@@ -1,0 +1,42 @@
+.back{
+  width: 50px;
+  height: 50px;
+  /* left: 100px;
+  top: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 15px;
+  color: white;
+  border: transparent;   
+  transition: 0.1s;
+  padding: 10px;
+  background: linear-gradient(106.12deg, rgba(255, 255, 255, 0.4) -4.46%, rgba(255, 255, 255, 0) 102.72%);
+}
+
+.back:hover{
+  cursor: pointer;
+  width: 55px;
+  padding: 0px 60px 0px 0px;
+}
+
+.container-back{
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  /* margin: 30px;
+  padding: 30px; */
+  z-index: 1;
+}
+
+.containerCard{
+  z-index: 1;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  display: flex;
+}

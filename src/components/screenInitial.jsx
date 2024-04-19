@@ -5,15 +5,13 @@ import Ellipses from './ellipses.jsx';
 import { Link } from 'react-router-dom';
 import CardAccess from './Cards/cardAccess.jsx';
 import CardRegister from './Cards/cardRegister.jsx';
+import ButtonBack from './buttons/buttonBack.jsx';
 
 const ScreenInitial = () => {
+
   return (
     <>
-      <div className='container-back'>
-        <Link to='/'>
-          <button className='back'><a>&lt;</a></button>
-        </Link>
-      </div>
+      <ButtonBack path='/' />
       <div className='containerCards'>
         <div className='container-screenInitial'>
           <CardAccess />
@@ -21,9 +19,11 @@ const ScreenInitial = () => {
           <CardRegister />
         </div>
       </div>
-      <div className='container-admin'>
-
-      </div>
+      <Link to='/loginPage'>
+        <div className='container-admin'>
+          <button>Administrador</button>
+        </div>
+      </Link>
       <Ellipses /> 
     </>
   )

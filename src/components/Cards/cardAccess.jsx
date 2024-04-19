@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import '../../css/cardCss/cardAccess.css';
 
 const CardAccess = () => {
+  const [user, setUser] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handlerSubmit = (event) => {
+    event.preventDefault();
+
+    if(!user || !password)
+      return;
+    setUser('')
+    setPassword('')
+    console.log(`Usuário: ${user} - Senha: ${password}`)
+  }
+
   return (
     <div className="container">
-      <form action="POST">
+      <form onSubmit={handlerSubmit}>
         <h1>Entrar</h1>
         <div className="container-form">
-          <input type="text" placeholder="Usuário" />
-          <input type="password" placeholder="Senha" />
+          <input type="text" value={user} onChange={(event) => {setUser(event.target.value)}} placeholder="Usuário" />
+          <input type="password" value={password} onChange={(event) => {setPassword(event.target.value)}} placeholder="Senha" />
         </div>
         <div className="container-subForm">
           <div className="checkBox">
@@ -18,7 +31,7 @@ const CardAccess = () => {
           <p>Esqueci a senha</p>
         </div>
         <div className="buttonLogin">
-          <button onSubmit="">Login</button>
+          <button type="submit">Entrar</button>
         </div>
       </form>
     </div>    

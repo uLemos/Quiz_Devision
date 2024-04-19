@@ -14,10 +14,15 @@ const ScreenInitial = () => {
           <button className='back'><a>&lt;</a></button>
         </Link>
       </div>
-      <div className='container-screenInitial'>
-        <CardAccess />
-        <div className='mid' />
-        <CardRegister />
+      <div className='containerCards'>
+        <div className='container-screenInitial'>
+          <CardAccess />
+          <div className='mid' />
+          <CardRegister />
+        </div>
+      </div>
+      <div className='container-admin'>
+
       </div>
       <Ellipses /> 
     </>

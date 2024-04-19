@@ -2,11 +2,16 @@ import React from "react";
 import '../../css/cardCss/cardRegister.css'
 
 const CardRegister = () => {
+
+    const handlerSubmit = (event) => {
+        
+    }
+
     return (
         <>
             <div className="container">
                 <form action="POST">
-                    <h1>Registrar</h1>
+                    <h1>Registre-se</h1>
                     <div className="container-form">
                         <input type="text" placeholder="Usuário" />
                         <input type="password" placeholder="Senha" />

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import '../../css/cardCss/cardAccess.css';
+import { Link } from "react-router-dom";
 
-const CardAccess = () => {
+const CardAccess = ({ isLoginAdm }) => {
   const [user, setUser] = useState('');
   const [password, setPassword] = useState('');
 
@@ -12,7 +13,7 @@ const CardAccess = () => {
       return;
     setUser('')
     setPassword('')
-    console.log(`Usuário: ${user} - Senha: ${password}`)
+    console.log(`${user}\n${password}\n${isLoginAdm}`)
   }
 
   return (
@@ -23,15 +24,22 @@ const CardAccess = () => {
           <input type="text" value={user} onChange={(event) => {setUser(event.target.value)}} placeholder="Usuário" />
           <input type="password" value={password} onChange={(event) => {setPassword(event.target.value)}} placeholder="Senha" />
         </div>
-        <div className="container-subForm">
-          <div className="checkBox">
-            <input type="checkbox" id="remenber" />
-            <label for="remenber">Lembre-se de mim</label>
+        { !isLoginAdm && 
+          <div className="container-subForm">
+            <div className="checkBox">
+              <input type="checkbox" id="remenber" />
+              <label for="remenber">Lembre-se de mim</label>
+            </div>
+            <p>Esqueci a senha</p>
           </div>
-          <p>Esqueci a senha</p>
-        </div>
+        }
         <div className="buttonLogin">
-          <button type="submit">Entrar</button>
+          { isLoginAdm &&
+            <Link to='/admin'> 
+              <button type="submit">Entrar</button>
+            </Link>
+          }
+          { !isLoginAdm && <button type="submit">Entrar</button>}
         </div>
       </form>
     </div>    

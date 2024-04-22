@@ -8,13 +8,13 @@ import CardRegister from './Cards/cardRegister.jsx';
 import ButtonBack from './buttons/buttonBack.jsx';
 
 const ScreenInitial = () => {
-
+  
   return (
     <>
-      <ButtonBack path='/' />
+      <ButtonBack path={'/'}/>
       <div className='containerCards'>
         <div className='container-screenInitial'>
-          <CardAccess />
+          <CardAccess isLoginAdm={false}/>
           <div className='mid' />
           <CardRegister />
         </div>

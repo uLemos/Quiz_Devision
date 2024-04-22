@@ -2,16 +2,18 @@ import React from "react"
 import '../../css/buttons.css'
 import { Link } from 'react-router-dom';
 
-const ButtonBack = (props) => {
+const ButtonBack = ({ path }) => {
 
   const teste = () => {
-    console.log(props.path)
+    if(path.typeof === 'undefined')
+      path = '/'
+    console.log(path)
   }
 
   return (
     <>
       <div className='container-back'>
-        <Link to={ props.path }>
+        <Link to={path}>
           <button onClick={ teste } className='back'><a>&lt;</a></button>
         </Link>
       </div>

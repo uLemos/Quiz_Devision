@@ -3,6 +3,7 @@ import Home from '../components/home.jsx'
 import ScreenInitial from "../components/screenInitial.jsx";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import LoginPage from "../components/loginPage.jsx";
+import Admin from "../components/admin/admin.jsx";
 
 const Routs = () => {
    return(
@@ -10,7 +11,8 @@ const Routs = () => {
           <Routes>
             <Route element = { <Home/> }  path="/" />
             <Route element = { <ScreenInitial/> }  path="/screenInitial" />
-            <Route element = { <LoginPage /> } path="/loginPage"/>
+            <Route element = { <LoginPage /> } path="/loginPage" />
+            <Route element = { <Admin />} path="/admin" />
           </Routes>
       </BrowserRouter>
    )

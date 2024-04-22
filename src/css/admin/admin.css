@@ -6,7 +6,7 @@
 }
 
 .menu{
-  width: 300px;
+  width: 400px;
   border-radius: 20px;
   background: linear-gradient(106.12deg, rgba(255, 255, 255, 0.4) -4.46%, rgba(255, 255, 255, 0) 102.72%);
   border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
@@ -21,9 +21,59 @@
   font-family: sans-serif;
   font-weight: bold;
   color: white;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .control-panel{
   width: 80%;
   height: 80%;
+}
+
+.control-panel img{
+  width: 20px;
+  height: 20px;
+}
+
+.titlesInPanelControl{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.control-panel a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+}
+
+.control-panel p{
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.control-panel-footer{
+  width: 80%;
+}
+
+.control-panel-footer img{
+  width: 20px;
+  height: 20px;
+}
+
+.control-panel-footer a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 20px;
+}
+
+.control-panel-footer p{
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
 }

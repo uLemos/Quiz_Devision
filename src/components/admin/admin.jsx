@@ -7,6 +7,7 @@ import Atividades from '../../img/cronometro.png';
 import Editar from '../../img/editar.png';
 import Configuracoes from '../../img/definindo-linhas.png';
 import Deslogar from '../../img/botao-ligar-desligar.png';
+import { Link } from 'react-router-dom';
 
 const Admin = () => {
 

@@ -27,7 +27,7 @@ const Admin = () => {
                             <p>Gerenciamento</p>
                         </div>
                         <div className="titlesInPanelControl">
-                            <a><img src={Atividades}/></a>
+                            <a><img src={Atividades} /></a>
                             <p>Atividades</p>
                         </div>
                         <div className="titlesInPanelControl">
@@ -37,13 +37,35 @@ const Admin = () => {
                     </div>
                     <div className="control-panel-footer">
                         <div className="titlesInPanelControl">
-                            <a><img src={Configuracoes}/></a>
+                            <a><img src={Configuracoes} /></a>
                             <p>Configuraçoes</p>
                         </div>
                         <div className="titlesInPanelControl">
-                            <a><img src={Deslogar}/></a>
+                            <a><img src={Deslogar} /></a>
                             <p>Desconectar</p>
                         </div>
+                    </div>
+                </div>
+                <div className="container-datasQuiz">
+                    <div className="info-admin">
+                        <div className="perfil-admin">
+                            <div className="photo">
+                                <img src={Gerenciamento} />
+                            </div>
+                            <div className="Welcome-Admin">
+                                <h1>uLemos</h1>
+                                <a>Bem vindo ao seu painel de controle do Quiz.</a>
+                            </div>
+                        </div>
+                        <div className="buttons-info">
+
+                        </div>
+                    </div>
+                    <div className="info-users">
+                        
+                    </div>
+                    <div className="table-container">
+
                     </div>
                 </div>
             </div>

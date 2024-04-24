@@ -7,6 +7,14 @@ import Atividades from '../../img/cronometro.png';
 import Editar from '../../img/editar.png';
 import Configuracoes from '../../img/definindo-linhas.png';
 import Deslogar from '../../img/botao-ligar-desligar.png';
+import Dog from '../../img/dog.png';
+import Sino from '../../img/sino.png';
+import Lupa from '../../img/lupa.png';
+import View from '../../img/view.png';
+import Users from '../../img/users.png';
+import Quizzes from '../../img/quizzes.png';
+
+
 import { Link } from 'react-router-dom';
 
 const Admin = () => {
@@ -50,19 +58,53 @@ const Admin = () => {
                     <div className="info-admin">
                         <div className="perfil-admin">
                             <div className="photo">
-                                <img src={Gerenciamento} />
+                                <img src={Dog} />
                             </div>
                             <div className="Welcome-Admin">
-                                <h1>uLemos</h1>
+                                <h1>uLemos</h1>   
                                 <a>Bem vindo ao seu painel de controle do Quiz.</a>
                             </div>
                         </div>
                         <div className="buttons-info">
-
+                            <div>
+                                <button><img src={Sino} /></button>
+                            </div>
+                            <div>
+                                <button><img src={Lupa} /></button>
+                            </div>
                         </div>
                     </div>
                     <div className="info-users">
-                        
+                        <div className="visualizations">
+                            <div>
+                                <button><img src={View} /></button>
+                            </div>
+                            <div>
+                                <p>Novas visualizaçoes</p>
+                                <p>1,000</p>
+                                <p>Mes anterior 750</p>
+                            </div>
+                        </div>
+                        <div className="visualizations">
+                            <div>
+                                <button><img src={Users} /></button>
+                            </div>
+                            <div>
+                                <p>Novos usuários registrados</p> 
+                                <p>500</p>
+                                <p>Mes anterior 150</p>
+                            </div>
+                        </div>
+                        <div className="visualizations">
+                            <div>
+                                <button><img src={Quizzes} /></button>
+                            </div>
+                            <div>
+                                <p>Novos quizzes respondidos</p> 
+                                <p>400</p>
+                                <p>Mes anterior 200</p>
+                            </div>
+                        </div>
                     </div>
                     <div className="table-container">
 

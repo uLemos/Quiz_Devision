@@ -31,7 +31,7 @@
 
 .menu p:hover{
   cursor: pointer;
-  color: antiquewhite;
+  color: rgba(194, 32, 32, 0.4);
 }
 
 .control-panel{
@@ -99,25 +99,106 @@
 
 .container-datasQuiz{
   width: 100%;
-  height: 30%;  
+  height: 100%;  
   display: flex;
-  justify-content: space-between;
-   background-color: aliceblue;
+  padding-left: 20px;
+  flex-wrap: wrap;
 }
 
 .info-admin{
   display: flex;
-  justify-content: space-around;
-  background-color: antiquewhite;
+  justify-content: flex-start;
   width: 100%;
+  height: 30%;
 }
 
 .perfil-admin{
+  width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .photo img{
-  width: 150px;
+  width: 120px;
+  padding-right: 20px;
+  border-radius: 80%;
+  clip-path: circle(100%);
+}
+
+.Welcome-Admin h1{
+  font-size: 38px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.Welcome-Admin a{
+  font-family: sans-serif;
+  font-weight: 200;
+  color: aliceblue;
+  word-spacing: 2px;
+}
+
+.buttons-info{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+
+.buttons-info button{
+  width: 60px;
+  border-radius: 50%;
+  clip-path: circle(50%);
+}
+
+.info-users{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(104deg, rgba(194, 32, 32, 0.4) -4.8%, rgba(249, 0, 0, 0.1) 101.14%);
+  border-image-source: linear-gradient(104.45deg, rgba(166, 0, 0, 0.1) 0%, rgba(163, 0, 0, 0) 100.63%);
+  box-shadow: 5px 5px 10px 0px #0000000D;
+  border-radius: 20px;
+}
+
+.table-container{
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(104deg, rgba(255, 255, 255, 0.4) -4.8%, rgba(217, 217, 217, 0.2) 101.14%);
+  border-image-source: linear-gradient(104.45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100.63%);
+  box-shadow: 5px 5px 10px 0px #0000000D;
+  border-radius: 20px;
+  border: 1px solid white;
+  border-image-source: linear-gradient(104.45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100.63%);
+}
+
+.visualizations{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+}
+
+.visualizations button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  clip-path: circle(50%);
+}
+
+.visualizations button img{
+  width: 35px;
+}
+
+.visualizations div p{
+  font-family: sans-serif;
+  font-weight: 200;
+  margin: 0 auto;
+  font-size: 15px;
 }

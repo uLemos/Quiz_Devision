@@ -14,17 +14,17 @@ const TableUsers = () => {
   }
 
   const rows = [
-    createData('Fernando Santos', Date.now.toString, 'email@email.com', 100, 'Online'),
-    createData('Admiro Gregorio', Date.now.toString, 'email@email.com', 100, 'Offline'),
-    createData('Fernando Lemos', Date.now.toString, 'email@email.com', 100, 'Online'),
-    createData('Fernando Neto', Date.now.toString, 'email@email.com', 100, 'Online'),
-    createData('Lucas Sergio', Date.now.toString, 'email@email.com', 100, 'Offline'),
-    createData('Batman O Morcego', Date.now.toString, 'email@email.com', 100, 'Online'),
-    createData('Robin Hood', Date.now.toString, 'email@email.com', 100, 'Offline'),
-    createData('Calabreso Samsumgo', Date.now.toString, 'email@email.com', 100, 'Offline'),
-    createData('Cnpjoto', Date.now.toString, 'email@email.com', 100, 'Online'),
-    createData('Linguição', Date.now.toString, 'email@email.com', 100, 'Offline'),
-    createData('Fernando Trevisano', Date.now.toString, 'email@email.com', 100, 'Online'),
+    createData('Fernando Santos', '24/04/2024', 'email@email.com', 100, 'Online'),
+    createData('Admiro Gregorio', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Fernando Lemos', '24/04/2024', 'email@email.com', 100, 'Online'),
+    createData('Fernando Neto', '24/04/2024', 'email@email.com', 100, 'Online'),
+    createData('Lucas Sergio', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Batman O Morcego', '24/04/2024', 'email@email.com', 100, 'Online'),
+    createData('Robin Hood', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Calabreso Samsumgo', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Cnpjoto', '24/04/2024', 'email@email.com', 100, 'Online'),
+    createData('Linguição', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Fernando Trevisano', '24/04/2024', 'email@email.com', 100, 'Online'),
     createData('Fernando Gonçalves', Date.now.toString, 'email@email.com', 100, 'Online'),
     createData('Lucas Riello', Date.now.toString, 'email@email.com', 100, 'Online')
   ];

@@ -13,7 +13,7 @@ import Lupa from '../../img/lupa.png';
 import View from '../../img/view.png';
 import Users from '../../img/users.png';
 import Quizzes from '../../img/quizzes.png';
-import TableUsers from "../table/tableUsers";
+import TableQuizzes from '../table/tableQuizzes'
 import { Link } from 'react-router-dom';
 
 const Admin = () => {
@@ -106,7 +106,7 @@ const Admin = () => {
                         </div>
                     </div>
                     <div className="table-container">
-                        <TableUsers />
+                        <TableQuizzes />
                     </div>
                 </div>
             </div>

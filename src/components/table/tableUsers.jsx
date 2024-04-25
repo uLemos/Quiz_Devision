@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
+import '../../css/table/table.css';
 
 const TableUsers = () => {
   
@@ -15,7 +16,7 @@ const TableUsers = () => {
 
   const rows = [
     createData('Fernando Santos', '24/04/2024', 'email@email.com', 100, 'Online'),
-    createData('Admiro Gregorio', '24/04/2024', 'email@email.com', 100, 'Offline'),
+    createData('Admiro Gregorio', '24/04/2024', 'email@email.com', 100, 'Offline'), 
     createData('Fernando Lemos', '24/04/2024', 'email@email.com', 100, 'Online'),
     createData('Fernando Neto', '24/04/2024', 'email@email.com', 100, 'Online'),
     createData('Lucas Sergio', '24/04/2024', 'email@email.com', 100, 'Offline'),
@@ -31,9 +32,8 @@ const TableUsers = () => {
 
   return (
     <>
-      <TableContainer component={Paper}>
-        <Table sx={{minWidth: 650}} aria-label='caption table'>
-          <caption>A basic table example with a caption</caption>
+      <TableContainer component={Paper} >
+        <Table sx={{minWidth: 650}} aria-label='caption table' bgcolor='white' >
           <TableHead>
             <TableRow>
               <TableCell>Nome dos Jogadores</TableCell>

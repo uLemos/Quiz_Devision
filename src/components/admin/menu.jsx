@@ -17,10 +17,14 @@ const Menu = () => {
                     <div className="titlesInPanelControl">
                         <a><img src={PainelDeControle} /></a>
                         <p>Painel de Controle</p>
+                        <Link to={'/admin'} />
                     </div>
                     <div className="titlesInPanelControl">
-                        <a><img src={Gerenciamento} /></a>
+                        <a>
+                            <img src={Gerenciamento} />
+                        </a>
                         <p>Gerenciamento</p>
+                        <Link to={'/manager'} />
                     </div>
                     <div className="titlesInPanelControl">
                         <a><img src={Atividades} /></a>

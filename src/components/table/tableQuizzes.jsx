@@ -18,8 +18,38 @@ const TableQuizzes = () => {
             <p>Respostas</p>
           </div>
         </div>
+        <div className='division'/>
         <div className='list-quizzes'>
-
+          <div className='bars-quizzes'>
+            <div>
+              <p>Full Stack</p>
+            </div>
+            <div>
+              <p>850</p>
+              <p>350</p>
+              <p>1500</p>
+            </div>
+          </div>
+          <div className='bars-quizzes'>
+          <div>
+              <p>Front-End</p>
+            </div>
+            <div>
+              <p>850</p>
+              <p>350</p>
+              <p>1500</p>
+            </div>
+          </div>
+          <div className='bars-quizzes'>
+          <div>
+              <p>Back-End</p>
+            </div>
+            <div>
+              <p>850</p>
+              <p>350</p>
+              <p>1500</p>
+            </div>
+          </div>
         </div>
       </div>
     </>    

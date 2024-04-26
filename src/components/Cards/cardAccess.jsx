@@ -36,7 +36,7 @@ const CardAccess = ({ isLoginAdm }) => {
         <div className="buttonLogin">
           { isLoginAdm &&
             <Link to='/admin'> 
-              <button type="submit">Entrar</button>
+              <button type="submit" style={{marginTop: 50}}>Entrar</button>
             </Link>
           }
           { !isLoginAdm && <button type="submit">Entrar</button>}

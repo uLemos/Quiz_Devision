@@ -1,0 +1,39 @@
+.table-users{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px 0px #0000000D;
+    background: linear-gradient(104deg, rgba(255, 255, 255, 0.4) -4.8%, rgba(217, 217, 217, 0.2) 101.14%);
+    border-image-source: linear-gradient(104.45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100.63%);
+  }
+  
+  .table-users button{
+    border-radius: 0;
+    width: 30px;
+  }
+  
+  .table-users h3{
+    width: 100%;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+  .table-users .css-zdf2ig-MuiPaper-root-MuiTableContainer-root{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: 200;
+    background-color: rgba(255, 255, 255, 0)
+  }
+
+  .table-users .MuiTableCell-root{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+  }

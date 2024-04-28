@@ -6,9 +6,23 @@ import Editar from '../../img/editar.png';
 import Configuracoes from '../../img/definindo-linhas.png';
 import Deslogar from '../../img/botao-ligar-desligar.png';
 import '../../css/admin/menu.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
+    const navigation = useNavigate();
+
+    const handlePageControllPanel = () => {
+        navigation('/admin');
+    }
+
+    const handlePageManager = () => {
+        navigation('/manager');
+    }
+
+    const handlePageLoginAdm = () => {
+        navigation('/loginPage');
+    }
+
     return (
         <>
             <div className="menu">
@@ -16,15 +30,13 @@ const Menu = () => {
                     <h1 className="">Quiz</h1>
                     <div className="titlesInPanelControl">
                         <a><img src={PainelDeControle} /></a>
-                        <p>Painel de Controle</p>
-                        <Link to={'/admin'} />
+                        <p onClick={handlePageControllPanel}>Painel de Controle</p>
                     </div>
                     <div className="titlesInPanelControl">
                         <a>
                             <img src={Gerenciamento} />
                         </a>
-                        <p>Gerenciamento</p>
-                        <Link to={'/manager'} />
+                        <p onClick={handlePageManager}>Gerenciamento</p>
                     </div>
                     <div className="titlesInPanelControl">
                         <a><img src={Atividades} /></a>
@@ -41,12 +53,8 @@ const Menu = () => {
                         <p>Configuraçoes</p>
                     </div>
                     <div className="titlesInPanelControl">
-                        <div className='desconect'>
-                            <a><img src={Deslogar} /></a>
-                            <Link to={'/loginPage'}>
-                                <p>Desconectar</p>
-                            </Link>
-                        </div>
+                        <a><img src={Deslogar} /></a>
+                        <p onClick={handlePageLoginAdm}>Desconectar</p>
                     </div>
                 </div>
             </div>

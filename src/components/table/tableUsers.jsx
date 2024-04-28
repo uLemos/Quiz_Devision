@@ -16,6 +16,8 @@ import FirstPageIcon from '@mui/icons-material/FirstPage';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
+import { red } from '@mui/material/colors';
+import { colors } from '@mui/material';
 
 function TablePaginationActions(props) {
 
@@ -79,7 +81,6 @@ TablePaginationActions.propTypes = {
   rowsPerPage: PropTypes.number.isRequired,
 };
 
-
 function createData(namePlayers, dateCreate, email, quizzes, status){
   return {namePlayers, dateCreate, email, quizzes, status};
 }
@@ -117,8 +118,10 @@ export default function TableUsers(){
 
   return (
     <>
-      <TableContainer component={Paper} >
-        <Table sx={{minWidth: 650}} aria-label='caption table' >
+      <TableContainer component={Paper} elevation={0} >
+        <Table sx={{
+              minWidth: 650,
+            }} aria-label='caption table' >
             <TableRow>
               <TableCell>Nome dos Jogadores</TableCell>
               <TableCell align='right'>Criação</TableCell>
@@ -126,11 +129,13 @@ export default function TableUsers(){
               <TableCell align='right'>Quizzes</TableCell>
               <TableCell align='right'>Status</TableCell>
             </TableRow>
-          <TableBody>
+          <TableBody sx={{
+            overflowY: 'hidden'
+          }}>
             {(rowsPerPage > 0
               ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               : rows
-            ).rows.map((row) => (
+            ).map((row) => (
               <TableRow key={row.namePlayers}>
                 <TableCell component='th' scope='row'>
                   {row.namePlayers}
@@ -150,9 +155,9 @@ export default function TableUsers(){
           <TableFooter>
             <TableRow>
               <TablePagination 
-                rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
-                colSpan={3}
-                count={row.length}
+                rowsPerPageOptions={[4, 10, 25, { label: 'All', value: -1 }]}
+                colSpan={5}
+                count={rows.length}
                 rowsPerPage={rowsPerPage}
                 page={page}
                 slotProps={{

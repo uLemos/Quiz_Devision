@@ -1,14 +1,20 @@
-import React from 'react';
-import '../../css/table/tableQuizzes.css';
+import React from "react";
+import "../../css/table/tableQuizzes.css";
+import { motion } from "framer-motion";
 
 const TableQuizzes = () => {
   return (
     <>
-      <div className='container-quizzes'>
-        <div className='header-quizzes'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ x: window.innerWidth }}
+        className="container-quizzes"
+      >
+        <div className="header-quizzes">
           <h2>Quizzes mais respondidos por mês</h2>
         </div>
-        <div className='sub-header'>
+        <div className="sub-header">
           <div>
             <p>Quizzes</p>
           </div>
@@ -18,9 +24,9 @@ const TableQuizzes = () => {
             <p>Respostas</p>
           </div>
         </div>
-        <div className='division'/>
-        <div className='list-quizzes'>
-          <div className='bars-quizzes'>
+        <div className="division" />
+        <div className="list-quizzes">
+          <div className="bars-quizzes">
             <div>
               <p>Full Stack</p>
             </div>
@@ -30,8 +36,8 @@ const TableQuizzes = () => {
               <p>1500</p>
             </div>
           </div>
-          <div className='bars-quizzes'>
-          <div>
+          <div className="bars-quizzes">
+            <div>
               <p>Front-End</p>
             </div>
             <div>
@@ -40,8 +46,8 @@ const TableQuizzes = () => {
               <p>1500</p>
             </div>
           </div>
-          <div className='bars-quizzes'>
-          <div>
+          <div className="bars-quizzes">
+            <div>
               <p>Back-End</p>
             </div>
             <div>
@@ -51,9 +57,9 @@ const TableQuizzes = () => {
             </div>
           </div>
         </div>
-      </div>
-    </>    
-  )
-}
+      </motion.div>
+    </>
+  );
+};
 
 export default TableQuizzes;

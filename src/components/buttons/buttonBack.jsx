@@ -1,24 +1,30 @@
-import React from "react"
-import '../../css/buttons.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import "../../css/buttons.css";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ButtonBack = ({ path }) => {
-
   const teste = () => {
-    if(path.typeof === 'undefined')
-      path = '/'
-    console.log(path)
-  }
+    if (path.typeof === "undefined") path = "/";
+    console.log(path);
+  };
 
   return (
     <>
-      <div className='container-back'>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ x: -window.innerWidth }}
+        className="container-back"
+      >
         <Link to={path}>
-          <button onClick={ teste } className='back'><a>&lt;</a></button>
+          <button onClick={teste} className="back">
+            <a>&lt;</a>
+          </button>
         </Link>
-      </div>
+      </motion.div>
     </>
-  )
-}
+  );
+};
 
 export default ButtonBack;

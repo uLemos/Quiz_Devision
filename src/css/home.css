@@ -1,4 +1,4 @@
-.home{
+.home {
   /* Home */
   width: 100%;
   display: flex;
@@ -6,10 +6,9 @@
   margin: 0;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
-  
-.title{
+
+.title {
   /* Hello </user> */
   position: relative;
   width: 100%;
@@ -17,7 +16,6 @@
   margin: 25px;
   /* justify-content: center;
   align-items: center; */
-  display: block;
   font-family: sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -27,11 +25,12 @@
   text-align: center;
   color: #ffffff;
   text-shadow: 0.3px 1px white;
-  z-index: 1;
-  transition: all 1s ease-out;
 }
 
-.title:hover{
+.title:hover {
   padding: 30px;
 }
-  
+
+.title p {
+  width: 100%;
+}

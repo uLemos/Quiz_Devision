@@ -8,7 +8,7 @@ const LoginPage = () => {
   return (
     <>
       <Ellipses />
-      <ButtonBack path={"/screenInitial"} />
+      <ButtonBack path={"/screenInitial"} isLogged={false} />
       <div className="containerCard">
         <CardAccess isLoginAdm={true} />
       </div>

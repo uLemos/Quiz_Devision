@@ -60,7 +60,13 @@ const CardAccess = ({ isLoginAdm }) => {
               </button>
             </Link>
           )}
-          {!isLoginAdm && <button type="submit">Entrar</button>}
+          {!isLoginAdm && 
+            (
+              <Link to="/categories">
+                <button type="submit">Entrar</button>
+              </Link>
+            )
+          }
         </div>
       </form>
     </motion.div>

@@ -12,7 +12,7 @@ const ScreenInitial = () => {
   return (
     <>
       <Ellipses />
-      <ButtonBack path={"/"} />
+      <ButtonBack path={"/"} isLogged={false} />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -30,16 +30,18 @@ const ScreenInitial = () => {
           <CardRegister />
         </div>
       </motion.div>
-      <Link to="/loginPage">
-        <motion.div
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          exit={{ x: window.innerWidth }}
-          className="container-admin"
-        >
-          <button>Administrador</button>
-        </motion.div>
-      </Link>
+      <div className="container-buttonAdm">
+        <Link to="/loginPage">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth }}
+            className="container-admin"
+            >
+            <button>Administrador</button>
+          </motion.div>
+        </Link>
+      </div>
     </>
   );
 };

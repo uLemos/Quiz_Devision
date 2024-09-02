@@ -24,10 +24,10 @@
 }
 
 .container-back{
-  position: relative;
   display: flex;
   width: 100%;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
   /* margin: 30px;
   padding: 30px; */
   z-index: 1;
@@ -39,4 +39,21 @@
   height: 80%;
   justify-content: center;
   display: flex;
+}
+
+.perfilName{
+  display: flex;
+  width: 15%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+  color: #FFFF;
+}
+
+.perfilName img{
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
 }

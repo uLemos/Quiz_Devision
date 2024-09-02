@@ -2,8 +2,9 @@ import React from "react";
 import "../../css/buttons.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Dog from "../../img/dog.png";
 
-const ButtonBack = ({ path }) => {
+const ButtonBack = ({ path, isLogged }) => {
   const teste = () => {
     if (path.typeof === "undefined") path = "/";
     console.log(path);
@@ -22,6 +23,14 @@ const ButtonBack = ({ path }) => {
             <a>&lt;</a>
           </button>
         </Link>
+
+        {isLogged && (
+          <div className="perfilName">
+            <a>uLemos</a>
+            <img src={Dog} />
+          </div>
+        )}
+        
       </motion.div>
     </>
   );

@@ -19,7 +19,6 @@ const CategoriesPage = () => {
 
     const handleConfirm = () => {
         console.log("Seleções: ", selections);
-        console.log("Seleções: ", selections);
     }
 
     return (
@@ -42,7 +41,7 @@ const CategoriesPage = () => {
             <div className="confirmedOptions">
                 <Link 
                     to={{
-                        pathname: "/questionsPage",
+                        pathname: selections.Dificuldade != null && selections.Categoria != null ? "/questionsPage" : "",
                         state: { selections }  
                     }}  
                 >

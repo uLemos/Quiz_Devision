@@ -1,0 +1,41 @@
+.containertable{
+   width:  100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative; 
+}
+
+.scoreTable{
+    width:  70%;
+    height: 75%;
+    margin: 20px;
+    border-radius: 30px;
+    border: transparent;
+    background: linear-gradient(106.12deg, rgba(255, 255, 255, 0.4) -4.46%, rgba(255, 255, 255, 0) 102.72%);
+    border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
+}
+
+.buttonsActions{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.buttonsActions button{
+    margin: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: transparent;
+    background: linear-gradient(106.12deg, rgba(255, 255, 255, 0.4) -4.46%, rgba(255, 255, 255, 0) 102.72%);
+    border-image-source: linear-gradient(105.39deg, rgba(255, 255, 255, 0.7) -4.74%, rgba(255, 255, 255, 0) 101.52%);
+}
+
+.buttonsActions button:hover{
+    cursor: pointer;
+    background: linear-gradient(104.45deg, rgba(30, 110, 155, 0.7) 0%, rgba(0, 97, 151, 0) 100.63%);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}

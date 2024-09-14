@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import CardAccess from "./Cards/cardAccess.jsx";
 import CardRegister from "./Cards/cardRegister.jsx";
 import ButtonBack from "./buttons/buttonBack.jsx";
-import { motion } from "framer-motion";
+import { motion } from "21";
 
 const ScreenInitial = () => {
   return (

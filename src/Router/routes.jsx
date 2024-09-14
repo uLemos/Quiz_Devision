@@ -8,6 +8,7 @@ import Manager from "../components/manager/manager.jsx";
 import { AnimatePresence } from "framer-motion";
 import CategoriesPage from "../components/categoriesPage.jsx";
 import QuestionsPage from "../components/questionsPage.jsx";
+import ScoreTable from "../components/scoreTable.jsx";
 
 const Routs = () => {
   const location = useLocation();
@@ -20,8 +21,9 @@ const Routs = () => {
         <Route element={<LoginPage />} path="/loginPage" />
         <Route element={<Admin />} path="/admin" />
         <Route element={<Manager />} path="/manager" />
-        <Route element={<CategoriesPage />} path="/categories" />\
+        <Route element={<CategoriesPage />} path="/categories" />
         <Route element={<QuestionsPage />} path="/questionsPage" />
+        <Route element={<ScoreTable />} path="/scoreTable" />
       </Routes>
     </AnimatePresence>
   );
